@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVD Görüntü Sıkıştırma</title>
+</head>
+<body>
+    <h1>Görüntü Yükleyin ve K Değerini Girin</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="file">Görüntü Dosyası:</label><br>
+        <input type="file" name="file" id="file" required><br><br>
+
+        <label for="k_value">K Değeri (Sıkıştırma Derecesi):</label><br>
+        <input type="number" name="k_value" id="k_value" min="1" required><br><br>
+
+        <input type="submit" value="Sıkıştır">
+    </form>
+</body>
+</html>

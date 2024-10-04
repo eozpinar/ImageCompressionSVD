@@ -54,7 +54,6 @@ for i in range(len(k_values)):
 
 for i in range(len(k_values)):
     low_rank_manuel = U_manuel[:, :k_values[i]] @ np.diag(Sigma_manuel[:k_values[i]]) @ Vt_manuel[:k_values[i], :]
-    #low_rank_manuel = np.abs(low_rank_manuel)
     plt.subplot(2,3,i+1),
     plt.imshow(low_rank_manuel, cmap='gray'),
     plt.title(f"For K value = {k_values[i]}")
